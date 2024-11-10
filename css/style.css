@@ -1,0 +1,367 @@
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 15px 0;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #bb86fc;
+}
+
+header input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+header button {
+    background-color: #bb86fc;
+    color: white;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #985eff;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.hero button {
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #bb86fc;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #985eff;
+}
+
+.btn-secondary {
+    background-color: #333;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #555;
+}
+
+.featured-books{
+    display: grid;
+    grid-template-columns: 4;
+
+}
+.book-list{
+    padding: auto;
+    margin: 2em;
+
+}
+
+.b1{
+    padding: 0.5em;
+}
+.categories{
+    display: grid;
+    grid-template-columns: auto;
+}
+.block{
+    color: white;
+}
+
+.categories img { 
+    width: 150px; 
+    /* Adjust the width as needed */ 
+    height: auto; /* Maintains aspect ratio */ 
+    margin: 10px; /* Adds space around the images */ 
+    border-radius: 8px; /* Adds rounded corners */ transition: transform 0.3s; 
+} 
+.categories img:hover { 
+    transform: scale(1.05); /* Slightly enlarges the image on hover */ 
+} 
+.categories .container {
+    text-align: left; /* Aligns the text to the left */ 
+    max-width: 1200px; margin: 0 auto; padding: 20px; 
+}
+/* Featured Books Styles */ 
+.featured-books {
+     padding: 40px 0; background-color: #1e1e1e; 
+    }
+
+.featured-books .container { 
+max-width: 1200px; margin: 0 auto; 
+} 
+
+.featured-books h2 { 
+ color: #bb86fc; text-align: center; 
+ margin-bottom: 20px; 
+} 
+.book-list { 
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+.book-list img {
+    width: 150px; /* Adjust the width as needed */ 
+    height: auto; /* Maintains aspect ratio */ 
+    margin: 10px; 
+    border-radius: 8px; /* Adds rounded corners */ 
+    transition: transform 0.3s; 
+} 
+.book-list img:hover { 
+    transform: scale(1.05);
+}
+.container h1{
+    text-align: center;
+}
+.container h2{
+    color: white;
+}
+ /* Styles for Best Sellers Images */ 
+.best-sellers { 
+    padding: 40px 0; background-color: #1e1e1e; 
+} .best-sellers .container {
+     max-width: 1200px; 
+     margin: 0 auto; 
+     text-align: center; 
+    } 
+    .best-sellers h2 { 
+        color: #bb86fc; 
+        text-align: center; 
+        margin-bottom: 20px; 
+    } 
+    .best-sellers img { 
+        width: 150px; /* Adjust the width as needed */ 
+        height: auto; /* Maintains aspect ratio */ 
+        margin: 10px; 
+        border-radius: 8px; /* Adds rounded corners */ 
+        transition: transform 0.3s; 
+    } 
+    .best-sellers img:hover { 
+        transform: scale(1.05); /* Slightly enlarges the image on hover */ 
+    }
+    .best-sellers .container h2{
+        color: white;
+    }
+
+  /* navigation bar to categories Sub sections */
+ header nav ul li .dropdown-content { 
+    display: none; position: absolute;
+     background-color: #1e1e1e; 
+     min-width: 200px; 
+     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+     z-index: 1; 
+     text-align: left; 
+    } 
+    header nav ul li .dropdown-content a { 
+        color: #e0e0e0; 
+        padding: 12px 16px; 
+        text-decoration: none; 
+        display: block; 
+        transition: background-color 0.3s, color 0.3s; 
+    }
+     header nav ul li .dropdown-content a:hover { 
+        background-color: #333; 
+        color: #bb86fc; 
+    } 
+        header nav ul li:hover .dropdown-content { 
+            display: block; 
+        }
+
+        .testimonials{
+            
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                background-color: #494949;
+                padding: 20px;
+               
+              }
+              .sahans{
+                padding-right: 2em;
+                padding-left: 2em;
+              }
+          
+/*Footer Sections*/
+.footer-container { display: flex; justify-content: space-around; padding: 20px; background-color: #111111; color: #fff; }
+.footer-section h3 { margin-bottom: 10px; }
+.footer-section p, .footer-section a { color: #bbb; text-decoration: none; }
+.footer-section ul { list-style: none; padding: 0; }
+.footer-section ul li { margin: 5px 0; }
+.footer-bottom { text-align: center; margin-top: 20px; font-size: 14px; }
+.social-icons a { margin: 0 10px; color: #bbb; }
+
+.testimonial-section-alt {
+    background: linear-gradient(135deg, #1f1e1e, #424242);
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.testimonial-section-alt h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.testimonials-alt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial-card-alt {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 300px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.testimonial-card-alt:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #e0e0e0;
+}
+
+.author {
+    font-weight: bold;
+    color: #ffecd1;
+    font-size: 1.1em;
+}
+
+
+/*Sahan*/
+
+
+
+/* Simple Button Styling */
+.add-to-cart-btn {
+    background-color: #ffffff;
+    color: rgb(54, 54, 54);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+/* Hover effect */
+.add-to-cart-btn:hover {
+    background-color: #f13e4d; /* Darker red */
+    transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+
+
+
+/*Wickbjewgkkkkkegwvkkkkkkkkkkkkkkkkh*/
+
+
+
+

@@ -1,0 +1,117 @@
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.categories{
+    display: grid;
+    grid-template-columns: auto;
+}
+.block{
+    color: white;
+}
+
+.categories img { 
+    width: 150px; 
+    /* Adjust the width as needed */ 
+    height: auto; /* Maintains aspect ratio */ 
+    margin: 10px; /* Adds space around the images */ 
+    border-radius: 8px; /* Adds rounded corners */ transition: transform 0.3s; 
+} 
+.categories img:hover { 
+    transform: scale(1.05); /* Slightly enlarges the image on hover */ 
+} 
+.categories .container {
+    text-align: left; /* Aligns the text to the left */ 
+    max-width: 1200px; margin: 0 auto; padding: 20px; 
+}
+/* Featured Books Styles */ 
+.featured-books {
+     padding: 40px 0; background-color: #1e1e1e; 
+    }
+
+.featured-books .container { 
+max-width: 1200px; margin: 0 auto; 
+} 
+
+.featured-books h2 { 
+ color: #bb86fc; text-align: center; 
+ margin-bottom: 20px; 
+} 
+.book-list { 
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+.book-list img {
+    width: 150px; /* Adjust the width as needed */ 
+    height: auto; /* Maintains aspect ratio */ 
+    margin: 10px; 
+    border-radius: 8px; /* Adds rounded corners */ 
+    transition: transform 0.3s; 
+} 
+.book-list img:hover { 
+    transform: scale(1.05);
+}
+.container h1{
+    text-align: center;
+}
+.container h2{
+    color: white;
+}
+ /* Styles for Best Sellers Images */ 
+.best-sellers { 
+    padding: 40px 0; background-color: #1e1e1e; 
+} .best-sellers .container {
+     max-width: 1200px; 
+     margin: 0 auto; 
+     text-align: center; 
+    } 
+    .best-sellers h2 { 
+        color: #bb86fc; 
+        text-align: center; 
+        margin-bottom: 20px; 
+    } 
+    .best-sellers img { 
+        width: 150px; /* Adjust the width as needed */ 
+        height: auto; /* Maintains aspect ratio */ 
+        margin: 10px; 
+        border-radius: 8px; /* Adds rounded corners */ 
+        transition: transform 0.3s; 
+    } 
+    .best-sellers img:hover { 
+        transform: scale(1.05); /* Slightly enlarges the image on hover */ 
+    }
+    .best-sellers .container h2{
+        color: white;
+    }
+
+  /* navigation bar to categories Sub sections */
+ header nav ul li .dropdown-content { 
+    display: none; position: absolute;
+     background-color: #1e1e1e; 
+     min-width: 200px; 
+     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+     z-index: 1; 
+     text-align: left; 
+    } 
+    header nav ul li .dropdown-content a { 
+        color: #e0e0e0; 
+        padding: 12px 16px; 
+        text-decoration: none; 
+        display: block; 
+        transition: background-color 0.3s, color 0.3s; 
+    }
+     header nav ul li .dropdown-content a:hover { 
+        background-color: #333; 
+        color: #bb86fc; 
+    } 
+        header nav ul li:hover .dropdown-content { 
+            display: block; 
+        }
+
