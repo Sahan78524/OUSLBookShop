@@ -1,0 +1,57 @@
+-- create database called OUSL Book Shop
+CREATE DATABASE ouslBookShop;
+
+-- use the newly created database 
+USE ouslBookShop;
+
+-- create table customers
+CREATE TABLE customers (
+    cid INT(10) AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    email VARCHAR(255) UNIQUE,
+    password VARCHAR(255),
+    address VARCHAR(255)
+);
+
+-- create table books
+CREATE TABLE books (
+    isbn INT(13) PRIMARY KEY,
+    title VARCHAR(255),
+    author VARCHAR(255),
+    genre VARCHAR(255),
+    price DECIMAL(10,2),
+    quantity INT(10)
+);
+
+-- create table shopping cart
+CREATE TABLE shoppingCart (
+    cartid INT(10) AUTO_INCREMENT PRIMARY KEY,
+    cid INT(10),
+    FOREIGN KEY (cid) REFERENCES customers(cid)
+);
+
+-- create table cart item
+CREATE TABLE cartItem (
+    id INT(10) AUTO_INCREMENT PRIMARY KEY,
+    cartid INT(10),
+    isbn INT(13),
+    FOREIGN KEY (cartid) REFERENCES shoppingCart(cartid),
+    FOREIGN KEY (isbn) REFERENCES books(isbn)
+);
+
+-- create table orders
+CREATE TABLE orders (
+    id INT(10) AUTO_INCREMENT PRIMARY KEY,
+    cid INT(10),
+    orderdate VARCHAR(10),
+    totalamount DECIMAL(10,2),
+    FOREIGN KEY (cid) REFERENCES customers(cid)
+);
+
+-- create table admins
+CREATE TABLE admin (
+    id INT(10) AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    email VARCHAR(255) UNIQUE,
+    password VARCHAR(255)
+);
